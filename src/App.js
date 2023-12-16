@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Formulaire from './components/Formulaire';
+import Use_reducer from './components/Use_reducer';
 
 function App() {
+
+  // const [name, setName]= useState('Mohamed')
+  // const [password, setPassword]= useState('')
+  //  const treat = () => {
+  //   setName(name)
+  //   console.log(name)
+  //  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Formulaire></Formulaire> */}
+      <Use_reducer></Use_reducer>
+
     </div>
+    
   );
 }
 
